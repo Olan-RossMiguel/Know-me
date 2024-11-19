@@ -7,9 +7,9 @@ Este proyecto es parte de mi participación en el **Bécalos Tech Challenge**, u
 ## Acerca de Mí 👨‍💻
 
 ### Datos Personales  
-**Nombre:** Jesús Miguel Olan Rosado
-**Ubicación:** Teapa, Tabasco 
-**Correo Electrónico:**jesrous12@gmail.com 
+-**Nombre:** Jesús Miguel Olan Rosado
+-**Ubicación:** Teapa, Tabasco 
+-**Correo Electrónico:**jesrous12@gmail.com 
 
 ### Datos Académicos  
 Soy estudiante de la carrera de **Ingeniería Informática**, con un enfoque en el desarrollo de aplicaciones y soluciones tecnológicas innovadoras.  
