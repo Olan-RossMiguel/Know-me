@@ -1,6 +1,6 @@
 .titulo {
     font-size: 36px; /* Tamaño de fuente */
-    color: #333; /* Color del texto */
+    color: white; /* Color del texto */
     text-align: center; /* Alineación del texto */
     margin: 20px 0; /* Margen superior e inferior */
     font-family: Arial, sans-serif; /* Fuente */
@@ -13,75 +13,74 @@ body {
     margin-bottom: 20px;  /* Margen inferior */
     margin-left: 80px;    /* Margen izquierdo */
     margin-right: 80px;   /* Margen derecho */
-    background-color:rgb(112, 172, 171);
+    background-color:hsl(347, 79%, 16%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .me {
     border-radius: 50%; /* Hace la imagen redonda */
     width: 100%; /* Ajusta al ancho del contenedor */
-    max-width: 300px; /* Tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción correcta */
-    object-fit: cover; /* Asegura que el contenido no se distorsione */
+    max-width: 300px; /* Tamaño máximo responsivo */
+    height: auto; /* Mantiene la proporción natural */
+    aspect-ratio: 1 / 1; /* Asegura que siempre sea un cuadrado */
+    object-fit: cover; /* Ajusta el contenido sin deformar */
     display: block; /* Elimina márgenes no deseados en imágenes en línea */
     margin: 0 auto; /* Centra la imagen dentro de su contenedor */
-}
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 10px solid gold; /* Margen negro */
 }
 
-.image {
-    width: 180px; 
-    height: 180px; 
-    border-radius: 50%; /* Mantiene la forma circular */
-    object-fit: cover; /* Hace que la imagen cubra el contenedor sin distorsionarse */
-    display: block; /* Elimina los márgenes no deseados en imágenes en línea */
+.hobbies-container {
+    display: flex;
+    flex-direction: column; /* Cada hobby se organiza en una fila */
+    gap: 1.5rem; /* Espaciado entre las filas */
 }
-@media (max-width: 768px) {
-    .image {
-      width: 150px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
-      height: 150px;
-    }
-  }
+
+.hobby-item {
+    display: flex; /* Alinea la imagen y el texto en una fila */
+    gap: 20px; /* Añade espacio entre la imagen y el texto */
+    margin-bottom: 20px; /* Espaciado entre cada hobby-item */
+    margin-top: 20px;
+}
+
+.hobby-image {
+    flex: 1; /* Asegura que la columna de la imagen ocupe una parte proporcional */
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+}
+
+.hobby-image img {
+    width: 150px; /* Tamaño más grande para la imagen */
+    height: 150px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 50%; /* Hace la imagen circular */
+}
+
+
+.hobby-text {
+    flex: 1; /* Asegura que la columna del texto ocupe una parte proporcional */
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente el texto */
+    align-items: center; /* Centra verticalmente el texto */
+    /* Tamaño más grande del texto */
+    text-align: center; /* Centra el texto */
+    color: #333; /* Color del texto */
+}
+footer{
+    color: white;
+}
+
+
+
+
+
   
 
-.list-group-item {
-    background-color: rgb(112, 172, 171);
-    
-    
-  }
+
   ul.custom-bullets li {
     list-style-type: disc; 
     color: black; 
 }
 
-.container-hobbies {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.simple-table {
-    width: 100%;
-    border-collapse: collapse; 
-    margin: 0 auto; 
-}
-
-.simple-table td {
-    padding: 15px; 
-    text-align: center; 
-}
-
-
-
-
-
-
-.accordion-body img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
 
 .accordion-body {
     overflow-x: auto;
